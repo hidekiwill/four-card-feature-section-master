@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --primary-red: hsl(0, 78%, 62%);
+  --primary-cyan: hsl(180, 62%, 55%);
+  --primary-orange: hsl(34, 97%, 64%);
+  --primary-blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 37.5rem;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+  padding-top: 8rem;
+  margin-bottom: 3rem;
+}
+/*MOBILE FIRST*/
+/*========HEADER========*/
+
+.text-top {
+  margin-bottom: 8rem;
+}
+
+.text-top p {
+  font-size: 2.3rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--very-dark-blue);
+}
+
+.text-top p:nth-child(1) {
+  font-weight: 200;
+}
+
+.text-top p:nth-child(2) {
+  font-weight: bold;
+}
+
+.text-top h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--grayish-blue);
+}
+
+/*========MENU-BOXES========*/
+
+.menu-boxes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.box {
+  position: relative;
+}
+
+.menu-boxes > div {
+  width: 100%;
+  height: 22.5rem;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.menu-boxes h2 {
+  font-size: 2rem;
+  color: var(--very-dark-blue);
+}
+
+.menu-boxes p {
+  margin-top: 0.6rem;
+  font-size: 1.2rem;
+  color: var(--grayish-blue);
+}
+
+.menu-boxes .box svg {
+  position: absolute;
+  left: 72%;
+  top: 60%;
+}
+
+.menu-boxes div:nth-child(1) {
+  border-top: 0.4rem solid var(--primary-cyan);
+}
+
+.menu-boxes div:nth-child(2) {
+  border-top: 0.4rem solid var(--primary-red);
+}
+
+.menu-boxes div:nth-child(3) {
+  border-top: 0.4rem solid var(--primary-orange);
+}
+
+.menu-boxes div:nth-child(4) {
+  border-top: 0.4rem solid var(--primary-blue);
+}
+
+/*========DESKTOP VIEW========*/
+
+@media (min-width: 1200px) {
+  .container {
+    width: 120rem;
+    padding: 9rem 7.2rem;
+  }
+
+  .text-top p {
+    font-size: 3.2rem;
+  }
+
+  .text-top h1 {
+    font-size: 1.5rem;
+    width: 50rem;
+    margin: 2rem auto;
+  }
+
+  .menu-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .menu-boxes > div {
+    width: 100%;
+    height: 25rem;
+    padding: 3.6rem;
+  }
+
+  .menu-boxes p {
+    font-size: 1.4rem;
+  }
+
+  .menu-boxes div:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self: center;
+  }
+
+  .menu-boxes div:nth-child(4) {
+    grid-column: 3;
+    grid-row: 1/3;
+    align-self: center;
+  }
+}
