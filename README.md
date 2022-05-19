@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/hidekiwill/four-card-feature-section-master
+- Live Site URL: https://hidekiwill.github.io/four-card-feature-section-master/
 
 ## My process
 
@@ -47,5 +47,5 @@ I learned more about css grid properties.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/hidekiwill)
+- Frontend Mentor - https://www.frontendmentor.io/profile/hidekiwill
 
